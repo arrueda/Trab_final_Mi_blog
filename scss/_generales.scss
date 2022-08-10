@@ -1,0 +1,402 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 90%;
+    margin: 10px auto;
+}
+
+h2{
+    font: bold 90% $fuente_h2;
+    justify-content: space-around;
+    font-weight: bold;
+    text-align: center;
+    background-color: $color_fondo_h2;
+    height: 180%;
+    line-height: 180%;
+    border-bottom: 2px dashed red;   
+}
+
+
+h1{
+    font: bold 400% $fuente_ppal;
+    font-weight: bold;
+    align-items: center;
+    color: $color_fuente;
+    padding-left: 30px;
+}
+
+.pie{
+    background-color: black;
+    color: $color_fuente;
+    font-size:13px;
+    text-align: center;
+    height: 300%;
+    width: 100%;
+    line-height: 200%;
+    padding: 2% 5% 0 5%;    
+}
+
+
+
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: $color_fondo;
+}
+
+
+.header{
+    border-bottom: 1px solid rgb(24, 3, 82);    
+}
+
+.moto_mia{
+    display: flex;
+    align-items: baseline;
+    & img{
+        border-radius: 10%;
+        width: 10%;
+        height: 10%;
+        margin-left: 10%;
+        margin-top: 3%;
+        border-style: inset;
+        align-items: baseline;       
+    }
+}
+
+.header_uno{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    &__parrafo{
+        font: bold calc(10% + 5vw) $fuente_ppal;
+        font-weight: bold;
+        color: $color_fuente;
+        position: absolute;
+        padding-top: 7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: rgba(0, 0, 0, 0.8);
+        
+    }
+    
+    & span:nth-child(2n+4){
+        font: bold 120% $fuente_ppal;
+    
+        animation-name: cambia_color;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+
+@keyframes cambia_color{
+   0%{
+    text-shadow: 4px 4px 4px black,-4px -4px 4px rgb(51, 6, 189),10px 15px 10px blue;
+   }
+
+   25%{
+    text-shadow: -4px -4px 4px rgb(51, 7, 184),5px 5px 10px blue;
+   }
+   
+   50%{
+    text-shadow: -4px -4px 4px rgb(48, 7, 194),4px 4px 2px black;
+   } 
+
+   75%{
+    text-shadow: 5px 5px 10px blue,4px 4px 2px black;
+   } 
+
+   100%{
+    text-shadow: 5px 5px 10px blue,-4px -4px 4px rgb(31, 19, 197),4px 4px 2px black;
+   } 
+
+}
+
+.video_head{
+    width: 100%;
+    border-radius: 1%;
+    border-style: inset;
+}
+
+.header_uno__parrafo_dos{
+    font: bold calc(-60% + 5vw) $fuente_ppal;
+    font-weight: bold;
+    color:$color_fuente;
+    position: absolute;
+    padding-top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:4px 4px 2px black;;
+    
+}
+
+.logo{
+    height: 2%;
+    width: auto;
+}
+
+h3::first-letter{
+   float:left;
+   color:$color_fuente;
+   background:rgb(2, 1, 39);
+   border:1px solid #999999;
+   padding:2px;
+   font-family:serif;
+   margin-right: 5px;
+}
+
+
+/* Letra capital*/
+p::first-letter{
+    float:left;
+    color:$color_fuente;
+    background:rgb(2, 1, 39);
+    border:1px solid #999999;
+    font-size:80px;
+    line-height:60px;
+    padding:2px;
+    font-family:serif;
+    margin-right: 5px;
+    margin-left: 5%;
+    margin: 2%;
+}
+/*Fin de letra capital*/
+
+/* Boton de scroll up*/
+#ir_arriba_boton{
+    position: fixed;
+    z-index: 10000;
+    right: 25px;
+    bottom: 25px;
+    background-color: rgb(25,121,169);
+    width: 40px;
+    height: 50px;
+    text-decoration: none;
+    color: $color_fuente;
+    text-align: center; 
+    line-height: 50px;
+    font-size: 22px;
+    border-radius: 40%;
+    transition: all 0.2s;
+}
+
+#ir_arriba_boton:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Fin boton de scroll up*/
+/* Fin del header*/
+/*-------------------------------------------------------------*/
+
+/* Pagina 'home'*/
+
+.h2_main_home{
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion_main1_home,
+.seccion_main2_home,
+.seccion_main3_home{
+    color:$color_fuente;
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}
+
+
+.p_sect{
+    grid-row: 1/3;
+    align-self: center;
+    padding: 0% 10% 0% 5%;
+}
+
+#foto_h1_3,
+#foto_h2_3,
+#foto_h3_3{
+    grid-column: 2/4;
+    justify-self: center;
+}
+
+.seccion_main1_home img,
+.seccion_main2_home img,
+.seccion_main3_home img{
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+    border-style: inset;
+    border-radius: 10%;
+}
+
+.img_a:hover,
+.img_u:hover,
+.img_c:hover{
+    transform: scale(1.5);
+    transition: all 0.2s linear;
+}
+
+/* Fin de pagina -home*/
+
+/*-------------------------------------------------------------*/
+
+.zonte_p1_yac,
+.zonte_p2_yac,
+.zonte_p3_yac,
+.zonte_p4_yac{
+    color: $color_fuente;
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}
+
+/*Estilos zonte_p1_yac -------------------------*/
+
+.zonte_p1_yac,
+.zonte_p2_yac,
+.zonte_p3_yac,
+.zonte_p4_yac{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px auto auto;              
+}
+
+.zonte_p1_yac p,
+.zonte_p2_yac p,
+.zonte_p3_yac p,
+.zonte_p4_yac p{
+    color: $color_fuente;
+    font-size: 100%;
+    padding: 20px 40px 10px 40px;       
+}
+
+.zonte_p1_yac p::first-letter,
+.zonte_p2_yac p::first-letter,
+.zonte_p3_yac p::first-letter,
+.zonte_p4_yac p::first-letter{
+    font-size:40px;
+    line-height:50px;
+    margin-top: -3px;
+    margin-right: 2px;                
+}
+
+.p_yac{
+    grid-column: span 2;
+    
+} 
+
+.zonte_p1_yac iframe,
+.zonte_p2_yac iframe,
+.zonte_p3_yac iframe,
+.zonte_p4_yac iframe{
+    width: 80%;
+    border-radius: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: inset;            
+}   
+            
+/*Fin estilos zonte_p1_yac -------------------------*/
+/* Crid. Pagina de YAC -------------------------------*/ 
+    
+.side_bar_yac{
+    display: flex;
+    flex-direction: column;
+    background-color: $color_side_fondo;
+    align-items: center;
+    & iframe{
+        width: 80%;
+        border-radius: 2%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-style: inset;        
+    }
+    & p{
+        color: $color_fuente;
+        font-size: 80%;
+    }
+    & p::first-letter{
+        font-size:50px;
+        line-height:50px;
+        margin-left: 18px;
+    }
+}
+
+.dropdown{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/*Crid. Fin pagina de YAC ---------------------*/
+/*formulario Booststrap ------------------------*/
+
+.form_zontes{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 98%;
+}
+
+.form_zontes_side_bar{
+    width: 60%;
+    margin-right: 2%;    
+}
+
+.row{
+    background-image:linear-gradient( rgba(116, 112, 124, 0.75), rgba(116, 112, 124, 0.75)), url("../imag/zontes_350x.jpg");
+    padding: 2% 0 2% 0;
+    border-radius: 2%;         
+}
+
+.form_zontes_form{
+    display: flex;
+    width: 40%;    
+}
+
+.form_zonte_form h3{
+    margin-bottom: 8%;            
+}
+
+.row input:hover{
+    background-color: #a89adb;
+    transition: all 1s;
+}
+
+.row input:focus{
+    background-color: #abf1cb;
+    transition: all 1s;
+}
+/*Fin de formulario Booststrap ------------------------*/
+
+/*Viajes Booststrap ------------------------*/
+
+.viaje_zontes{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    
+}
+
+.v_zonte{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    & h3{
+        margin-bottom: 2%;            
+    }    
+}
+
+/*Fin de viajes Booststrap ------------------------*/

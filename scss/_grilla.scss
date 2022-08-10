@@ -1,0 +1,479 @@
+
+@media only screen and (max-width:600px){
+
+    .body{
+        width: 98%;
+        margin-left: 10px;
+               
+    }
+
+    h3::first-letter{
+        font-size:50px;
+        line-height:50px;
+    }
+
+    h3{
+        padding: 1px 1px;
+        color: $color_fuente;
+        font-size: 80%;
+    }
+
+    h2{
+        font: bold 90% $fuente_h2;
+    }
+
+    h1{
+        font: bold 200% $fuente_ppal;
+        font-size: 40px;
+    }
+
+    .pie{        
+        font-size:15px;
+        padding-top: 1%;
+    }
+
+    .seccion_main1_home,
+    .seccion_main2_home,
+    .seccion_main3_home{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;               
+    }
+    
+    /* Crid. Pagina home -------------------------------*/ 
+    .main_home{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: 15px auto auto auto auto;
+        grid-template-areas:  "h2_main_home"
+                              "seccion_main1_home"
+                              "seccion_main2_home"
+                              "seccion_main3_home"
+                              "side_bar";
+        gap: 1em;
+    }
+    
+    .side_bar{
+        display: flex;
+        flex-direction: column;
+        background-color: $color_side_fondo;
+        align-items: center;
+    }
+
+    .side_bar{
+        grid-area: side_bar;        
+    }
+
+    .side_bar iframe{
+        width: 50%;
+        border-radius: 1%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-style: inset;            
+    }
+    
+    .side_bar p{
+        color: $color_fuente;
+        font-size: 80%;
+        
+    }
+    
+    .side_bar p::first-letter{
+        font-size:50px;
+        line-height:50px;
+        margin-left: 18px;
+    }
+    /* Crid. Fin Pagina home -------------------------------*/ 
+    
+    /* Crid. Pagina de YAC -------------------------------*/ 
+    #mi_moto_yac{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: 15px auto auto auto auto auto;
+        grid-template-areas:  "h2_yac"
+                            "zonte_p1_yac"
+                            "zonte_p2_yac"
+                            "zonte_p3_yac"
+                            "zonte_p4_yac"
+                            "side_bar_yac";
+        gap: 1em;
+    }
+    
+    .side_bar_yac{
+        grid-area: side_bar_yac;
+    }
+
+    .side_bar_yac{
+        display: flex;
+        flex-direction: column;
+        background-color: $color_side_fondo;
+        align-items: center;
+        & iframe{
+            width: 50%;
+            border-radius: 2%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-style: inset;
+                
+        }
+        & p{
+            color:$color_fuente;
+            font-size: 80%;
+            margin-bottom: 5px;
+        }
+        & p::first-letter{
+            font-size:50px;
+            line-height:50px;
+            margin-left: 18px;
+        }
+
+    }
+
+    .zonte_p1_yac p,
+    .zonte_p2_yac p,
+    .zonte_p3_yac p,
+    .zonte_p4_yac p{
+        color:$color_fuente;
+        font-size: 80%;
+        padding: 20px 40px 10px 40px; 
+        
+    }
+
+    .zonte_p1_yac p::first-letter,
+    .zonte_p2_yac p::first-letter,
+    .zonte_p3_yac p::first-letter,
+    .zonte_p4_yac p::first-letter{
+        font-size:40px;
+        line-height:50px;
+        margin-top: -3px;
+        margin-right: 2px;
+                    
+    }
+    
+    .p_yac{
+        grid-column: span 2;
+        
+    } 
+
+    .zonte_p1_yac iframe,
+    .zonte_p2_yac iframe,
+    .zonte_p3_yac iframe,
+    .zonte_p4_yac iframe{
+        width: 80%;
+        border-radius: 2%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-style: inset;
+            
+    }
+
+    /*Crid. Fin pagina de YAC ---------------------*/
+    /*Pagina formulario ----------------------------*/
+
+    .form_zontes{
+        flex-wrap: wrap;
+        justify-content: space-evenly;       
+    }
+
+    .form_zontes .form_zontes_side_bar{
+        width: 100%;
+    }
+
+    /*Pagina viajes ----------------------------*/
+
+    .viaje_zontes{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;       
+    }
+
+    .viaje_zontes_side_bar{
+        margin-left: 10%;
+        width: 100%;
+        margin-top: 2%;
+    }
+    
+    .dropdown{
+        margin-left: 80%;
+    
+    }
+}
+
+
+@media only screen and (min-width:600px) and (max-width:1020px){
+
+    .header_uno__parrafo_dos{
+        font: bold 300% $fuente_ppal;      
+    }
+
+    .header_uno__parrafo span:nth-child(2n+4){
+        font: bold 90% $fuente_ppal;
+    }
+               
+    h3::first-letter{
+        font-size:70px;
+        line-height:50px;
+    }
+
+    h3{
+        padding: 20px 40px 10px 40px;
+        color:$color_fuente;
+        font-size: 100%;
+        text-align: center;
+    }
+
+    h2{
+        font: bold 120% $fuente_h2;
+    }
+
+    .seccion_main1_home,
+    .seccion_main2_home,
+    .seccion_main3_home{
+        display: flex;
+        flex-wrap: wrap;                
+    }
+    
+    /* Crid. Pagina home -------------------------------*/ 
+    .main_home{
+        display: grid;
+        grid-template-columns: 30% 69%;
+        grid-auto-rows: 20px auto auto auto;
+        grid-template-areas: "h2_main_home  h2_main_home"
+                              "side_bar  seccion_main1_home"
+                              "side_bar  seccion_main2_home"
+                              "side_bar   seccion_main3_home";
+        gap: 1em;
+    }
+    
+    .h2_main_home{
+        grid-area: h2_main_home;
+    }
+    
+    .side_bar{
+        grid-area: side_bar;
+    }
+
+    .seccion_main1_home{
+        grid-area: seccion_main1_home;
+    }
+
+    .seccion_main2_home{
+        grid-area: seccion_main2_home;
+    }
+
+    .seccion_main3_home{
+        grid-area: seccion_main3_home;
+    }
+
+    .side_bar{
+        display: flex;
+        flex-direction: column;
+        background-color: $color_side_fondo;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .side_bar iframe{
+        width: 80%;
+        border-radius: 1%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-style: inset;
+            
+    }
+    
+    .side_bar p{
+        color: $color_fuente;
+        font-size: 80%;
+    }
+    
+    .side_bar p::first-letter{
+        font-size:50px;
+        line-height:50px;
+        margin-left: 18px;
+    }
+    /* Crid. Fin Pagina home -------------------------------*/ 
+        
+    /* Crid. Pagina de YAC -------------------------------*/ 
+    
+    #mi_moto_yac{
+        display: grid;
+        grid-template-columns: 33% 66%;
+        grid-auto-rows: 20px auto auto auto auto;
+        grid-template-areas: "h2_yac           h2_yac"        
+                             "side_bar_yac     zonte_p1_yac"   
+                             "side_bar_yac     zonte_p2_yac"   
+                             "side_bar_yac     zonte_p3_yac"   
+                             "side_bar_yac     zonte_p4_yac";
+        gap: 1em;
+    }
+
+    .h2_yac{
+        grid-area: h2_yac;
+    }
+    
+    .side_bar_yac{
+        grid-area: side_bar_yac;
+    }
+    
+    /*Crid. Fin pagina de YAC ---------------------*/
+
+    .seccion_main1_home,
+    .seccion_main2_home,
+    .seccion_main3_home{
+        display: grid;
+        grid-template-columns: 70% 15% 15%;
+        grid-template-rows: 140px 140px;                
+    }
+  
+    /*Pagina formulario ----------------------------*/
+
+    .form_zontes{
+        flex-wrap: wrap;
+        justify-content: space-evenly;       
+    }
+
+    .form_zontes .form_zontes_side_bar{
+        width: 100%;
+    }
+
+    /*Pagina viajar ----------------------------*/
+
+    .viaje_zontes{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-content: flex-end   
+    }
+
+    .viaje_zontes_side_bar{
+        width: 100%;
+        margin-top: 2%;
+        
+    }
+
+    .dropdown{
+        margin-left: 90%;
+    
+    }
+
+    .dropdown{
+        margin-left: 90%;
+    
+    }
+
+}
+
+@media only screen and (min-width:1020px){
+
+    h3::first-letter{
+        font-size:50px;
+        line-height:50px;
+    }
+
+    h3{
+        padding: 20px 40px 10px 40px;
+        color:$color_fuente;
+        font-size: 90%;
+    }
+
+    h2{
+        font: bold 150% $fuente_h2;      
+    }
+
+    h1{
+        font: bold 600% $fuente_ppal;              
+    }
+
+    /* Crid. Pagina home -------------------------------*/ 
+    .main_home{
+        display: grid;
+        grid-template-columns: 20% 79%;
+        grid-auto-rows: 20px auto auto auto;
+        grid-template-areas: "h2_main_home  h2_main_home"
+                             "side_bar      seccion_main1_home"
+                             "side_bar      seccion_main2_home"
+                             "side_bar      seccion_main3_home";
+        gap: 1em;
+    }
+    
+    .h2_main_home{
+        grid-area: h2_main_home;
+    }
+    
+    .side_bar{
+        grid-area: side_bar;
+    }
+
+    .side_bar{
+        display: flex;
+        flex-direction: column;
+        background-color: $color_side_fondo;
+        align-items: center;
+    }
+
+    .side_bar iframe{
+        width: 80%;
+        border-radius: 1%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-style: inset;            
+    }
+    
+    .side_bar p{
+        color: $color_fuente;
+        font-size: 80%;
+    }
+    
+    .side_bar p::first-letter{
+        font-size:50px;
+        line-height:50px;
+        margin-left: 18px;
+    }
+    /* Crid. Fin Pagina home -------------------------------*/ 
+    
+    
+    /* Crid. Pagina de YAC -------------------------------*/ 
+
+    #mi_moto_yac{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    #mi_moto_yac{
+        display: grid;
+        grid-template-columns: 20% 79%;   
+        grid-auto-rows: 20px auto auto auto auto;
+        grid-template-areas: "h2_yac              h2_yac"        
+                             "side_bar_yac        zonte_p1_yac"   
+                             "side_bar_yac        zonte_p2_yac"   
+                              "side_bar_yac        zonte_p3_yac"   
+                              "side_bar_yac        zonte_p4_yac";
+        gap: 1em;
+    }
+   
+    .h2_yac{
+        grid-area: h2_yac;
+    }
+    
+    .side_bar_yac{
+        grid-area: side_bar_yac;
+    }
+    
+    /*Crid. Fin pagina de YAC ---------------------*/
+
+    .seccion_main1_home,
+    .seccion_main2_home,
+    .seccion_main3_home{
+        display: grid;
+        grid-template-columns: 70% 15% 15%;
+        grid-template-rows: 140px 140px;                
+    }
+    
+    .dropdown{
+        margin-left: 92.5%;
+    
+    }
+            
+    /*Fin estilos zonte_p1_yac -------------------------*/
+    
+}   
