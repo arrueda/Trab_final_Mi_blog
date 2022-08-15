@@ -4,3 +4,14 @@ $fuente_h2: 'Aclonica', sans-serif;
 $fuente_ppal: 'Ibarra Real Nova', serif;
 $color_side_fondo: #353758;
 $color_fondo_h2: rgb(148, 146, 236);
+
+$primary: #5e195a;
+$danger: #ff4136;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+
+

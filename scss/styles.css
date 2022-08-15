@@ -1,29 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Berkshire+Swash&familbarray=Castoro&family=Courgette&family=Dancing+Script&family=Merriweather:wght@900&family=Poppins:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Berkshire+Swash&family=Castoro&family=Courgette&family=Dancing+Script&family=Ibarra+Real+Nova:ital,wght@1,700&family=Merriweather:wght@900&family=Poppins:ital@0;1&display=swap");
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 h2 {
   font: bold 90% "Aclonica", sans-serif;
   justify-content: space-around;
   font-weight: bold;
   text-align: center;
-  background-color: #9492ec;
+  background-color: rgb(148, 146, 236);
   height: 180%;
   line-height: 180%;
-  border-bottom: 2px dashed red; }
+  border-bottom: 2px dashed red;
+}
 
 h1 {
   font: bold 400% "Ibarra Real Nova", serif;
   font-weight: bold;
   align-items: center;
   color: white;
-  padding-left: 30px; }
+  padding-left: 30px;
+}
 
 .pie {
   background-color: black;
@@ -33,69 +37,105 @@ h1 {
   height: 300%;
   width: 100%;
   line-height: 200%;
-  padding: 2% 5% 0 5%; }
+  padding: 2% 5% 0 5%;
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #08011a; }
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(8, 1, 26);
+}
 
 .header {
-  border-bottom: 1px solid #180352; }
+  border-bottom: 1px solid rgb(24, 3, 82);
+}
 
 .moto_mia {
   display: flex;
-  align-items: baseline; }
-  .moto_mia img {
-    border-radius: 10%;
-    width: 10%;
-    height: 10%;
-    margin-left: 10%;
-    margin-top: 3%;
-    border-style: inset;
-    align-items: baseline; }
+  align-items: baseline;
+}
+.moto_mia img {
+  border-radius: 10%;
+  width: 10%;
+  height: 10%;
+  margin-left: 10%;
+  margin-top: 3%;
+  border-style: inset;
+  align-items: baseline;
+}
 
 .header_uno {
   display: flex;
   flex-direction: column;
-  align-items: stretch; }
-  .header_uno__animacion-video {
-    position: relative; }
-    .header_uno__animacion-video__parrafo {
-      font: bold calc(10% + 5vw) "Ibarra Real Nova", serif;
-      font-weight: bold;
-      color: white;
-      position: absolute;
-      left: 50%;
-      top: 10%;
-      transform: translate(-50%, -50%);
-      text-shadow: rgba(0, 0, 0, 0.8); }
-    .header_uno__animacion-video__parrafo_dos {
-      font: bold calc(-60% + 5vw) "Ibarra Real Nova", serif;
-      font-weight: bold;
-      color: white;
-      position: absolute;
-      top: 70%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-shadow: 4px 4px 2px black; }
-  .header_uno span:nth-child(2n+2) {
-    font: bold 120% "Ibarra Real Nova", serif;
-    animation-name: cambia_color;
-    animation-duration: 2s;
-    animation-iteration-count: infinite; }
+  align-items: stretch;
+}
+.header_uno__animacion-video {
+  position: relative;
+}
+.header_uno__animacion-video__parrafo {
+  font: bold calc(10% + 5vw) "Ibarra Real Nova", serif;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  text-shadow: rgba(0, 0, 0, 0.8);
+}
+.header_uno__animacion-video__parrafo_dos {
+  font: bold calc(-60% + 5vw) "Ibarra Real Nova", serif;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 4px 4px 2px black;
+}
+.header_uno span:nth-child(2n+2) {
+  font: bold 120% "Ibarra Real Nova", serif;
+  -webkit-animation-name: cambia_color;
+          animation-name: cambia_color;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cambia_color {
+  0% {
+    text-shadow: 4px 4px 4px black, -4px -4px 4px rgb(51, 6, 189), 10px 15px 10px blue;
+  }
+  25% {
+    text-shadow: -4px -4px 4px rgb(51, 7, 184), 5px 5px 10px blue;
+  }
+  50% {
+    text-shadow: -4px -4px 4px rgb(48, 7, 194), 4px 4px 2px black;
+  }
+  75% {
+    text-shadow: 5px 5px 10px blue, 4px 4px 2px black;
+  }
+  100% {
+    text-shadow: 5px 5px 10px blue, -4px -4px 4px rgb(31, 19, 197), 4px 4px 2px black;
+  }
+}
 
 @keyframes cambia_color {
   0% {
-    text-shadow: 4px 4px 4px black, -4px -4px 4px #3306bd, 10px 15px 10px blue; }
+    text-shadow: 4px 4px 4px black, -4px -4px 4px rgb(51, 6, 189), 10px 15px 10px blue;
+  }
   25% {
-    text-shadow: -4px -4px 4px #3307b8, 5px 5px 10px blue; }
+    text-shadow: -4px -4px 4px rgb(51, 7, 184), 5px 5px 10px blue;
+  }
   50% {
-    text-shadow: -4px -4px 4px #3007c2, 4px 4px 2px black; }
+    text-shadow: -4px -4px 4px rgb(48, 7, 194), 4px 4px 2px black;
+  }
   75% {
-    text-shadow: 5px 5px 10px blue,4px 4px 2px black; }
+    text-shadow: 5px 5px 10px blue, 4px 4px 2px black;
+  }
   100% {
-    text-shadow: 5px 5px 10px blue, -4px -4px 4px #1f13c5, 4px 4px 2px black; } }
-
+    text-shadow: 5px 5px 10px blue, -4px -4px 4px rgb(31, 19, 197), 4px 4px 2px black;
+  }
+}
 .video_head {
   width: 70%;
   border-radius: 1%;
@@ -104,27 +144,30 @@ body {
   margin-left: auto;
   margin-right: auto;
   /*
-    margin-left: 15%;
-    */ }
+  margin-left: 15%;
+  */
+}
 
 .logo {
   height: 2%;
-  width: auto; }
+  width: auto;
+}
 
 h3::first-letter {
   float: left;
   color: white;
-  background: #020127;
+  background: rgb(2, 1, 39);
   border: 1px solid #999999;
   padding: 2px;
   font-family: serif;
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 
 /* Letra capital*/
 p::first-letter {
   float: left;
   color: white;
-  background: #020127;
+  background: rgb(2, 1, 39);
   border: 1px solid #999999;
   font-size: 80px;
   line-height: 60px;
@@ -132,7 +175,8 @@ p::first-letter {
   font-family: serif;
   margin-right: 5px;
   margin-left: 5%;
-  margin: 2%; }
+  margin: 2%;
+}
 
 /*Fin de letra capital*/
 /* Fin del header*/
@@ -140,7 +184,8 @@ p::first-letter {
 /* Pagina 'home'*/
 .h2_main_home {
   justify-items: stretch;
-  align-items: center; }
+  align-items: center;
+}
 
 .seccion_main1_home,
 .seccion_main2_home,
@@ -148,33 +193,39 @@ p::first-letter {
   color: white;
   border-bottom: 1px solid #eee;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 .p_sect {
   grid-row: 1/3;
   align-self: center;
-  padding: 0% 10% 0% 5%; }
+  padding: 0% 10% 0% 5%;
+}
 
 #foto_h1_3,
 #foto_h2_3,
 #foto_h3_3 {
   grid-column: 2/4;
-  justify-self: center; }
+  justify-self: center;
+}
 
 .seccion_main1_home img,
 .seccion_main2_home img,
 .seccion_main3_home img {
   width: 180px;
   height: 130px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-style: inset;
-  border-radius: 10%; }
+  border-radius: 10%;
+}
 
 .img_a:hover,
 .img_u:hover,
 .img_c:hover {
   transform: scale(1.5);
-  transition: all 0.2s linear; }
+  transition: all 0.2s linear;
+}
 
 /* Fin de pagina -home*/
 /*-------------------------------------------------------------*/
@@ -185,7 +236,8 @@ p::first-letter {
   color: white;
   border-bottom: 1px solid #eee;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 /*Estilos zonte_p1_yac -------------------------*/
 .zonte_p1_yac,
@@ -194,7 +246,8 @@ p::first-letter {
 .zonte_p4_yac {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 80px auto auto; }
+  grid-template-rows: 80px auto auto;
+}
 
 .zonte_p1_yac p,
 .zonte_p2_yac p,
@@ -202,7 +255,8 @@ p::first-letter {
 .zonte_p4_yac p {
   color: white;
   font-size: 100%;
-  padding: 20px 40px 10px 40px; }
+  padding: 20px 40px 10px 40px;
+}
 
 .zonte_p1_yac p::first-letter,
 .zonte_p2_yac p::first-letter,
@@ -211,10 +265,12 @@ p::first-letter {
   font-size: 40px;
   line-height: 50px;
   margin-top: -3px;
-  margin-right: 2px; }
+  margin-right: 2px;
+}
 
 .p_yac {
-  grid-column: span 2; }
+  grid-column: span 2;
+}
 
 .zonte_p1_yac iframe,
 .zonte_p2_yac iframe,
@@ -224,7 +280,8 @@ p::first-letter {
   border-radius: 2%;
   margin-top: 5px;
   margin-bottom: 5px;
-  border-style: inset; }
+  border-style: inset;
+}
 
 /*Fin estilos zonte_p1_yac -------------------------*/
 /* Crid. Pagina de YAC -------------------------------*/
@@ -232,27 +289,33 @@ p::first-letter {
   display: flex;
   flex-direction: column;
   background-color: #353758;
-  align-items: center; }
-  .side_bar_yac iframe {
-    width: 80%;
-    border-radius: 2%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-style: inset; }
-  .side_bar_yac p {
-    color: white;
-    font-size: 80%; }
-  .side_bar_yac p::first-letter {
-    font-size: 50px;
-    line-height: 50px;
-    margin-left: 18px; }
+  align-items: center;
+}
+.side_bar_yac iframe {
+  width: 80%;
+  border-radius: 2%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-style: inset;
+}
+.side_bar_yac p {
+  color: white;
+  font-size: 80%;
+}
+.side_bar_yac p::first-letter {
+  font-size: 50px;
+  line-height: 50px;
+  margin-left: 18px;
+}
 
 .dropdown {
   display: flex;
   justify-content: flex-end;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1000; }
+  z-index: 1000;
+}
 
 /*Crid. Fin pagina de YAC ---------------------*/
 /*formulario Booststrap ------------------------*/
@@ -260,331 +323,410 @@ p::first-letter {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
-  width: 98%; }
+  width: 98%;
+}
 
 .form_zontes_side_bar {
   width: 60%;
-  margin-right: 2%; }
+  margin-right: 2%;
+}
 
 .row {
   background-image: linear-gradient(rgba(116, 112, 124, 0.75), rgba(116, 112, 124, 0.75)), url("../imag/zontes_350x.jpg");
   padding: 2% 0 2% 0;
-  border-radius: 2%; }
+  border-radius: 2%;
+}
 
 .form_zontes_form {
   display: flex;
-  width: 40%; }
+  width: 40%;
+}
 
 .form_zonte_form h3 {
-  margin-bottom: 8%; }
+  margin-bottom: 8%;
+}
 
 .row input:hover {
   background-color: #a89adb;
-  transition: all 1s; }
+  transition: all 1s;
+}
 
 .row input:focus {
   background-color: #abf1cb;
-  transition: all 1s; }
+  transition: all 1s;
+}
 
 /*Fin de formulario Booststrap ------------------------*/
 /*Viajes Booststrap ------------------------*/
 .viaje_zontes {
   display: flex;
   flex-direction: row-reverse;
-  width: 90%; }
+  width: 90%;
+}
 
 .v_zonte {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin-left: 10%; }
-  .v_zonte h3 {
-    margin-bottom: 2%; }
+  margin-left: 10%;
+}
+.v_zonte h3 {
+  margin-bottom: 2%;
+}
 
 /*Fin de viajes Booststrap ------------------------*/
 @media only screen and (max-width: 600px) {
   h3::first-letter {
     font-size: 50px;
-    line-height: 50px; }
+    line-height: 50px;
+  }
   h3 {
     padding: 1.2rem;
     color: white;
-    font-size: 80%; }
+    font-size: 80%;
+  }
   h2 {
-    font: bold 90% "Aclonica", sans-serif; }
+    font: bold 90% "Aclonica", sans-serif;
+  }
   h1 {
     font: bold 200% "Ibarra Real Nova", serif;
-    font-size: 40px; }
+    font-size: 40px;
+  }
   .pie {
     font-size: 15px;
-    padding-top: 1%; }
+    padding-top: 1%;
+  }
   .seccion_main1_home,
-  .seccion_main2_home,
-  .seccion_main3_home {
+.seccion_main2_home,
+.seccion_main3_home {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+  }
   /* Crid. Pagina home -------------------------------*/
   .main_home {
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: 15px auto auto auto auto;
-    grid-template-areas: "h2_main_home" "seccion_main1_home" "seccion_main2_home" "seccion_main3_home" "side_bar";
-    gap: 1em; }
+    grid-template-areas: "h2_main_home" "seccion_main1_home" "seccion_main2_home" "seccion_main3_home" "side_bar";
+    gap: 1em;
+  }
   .side_bar {
     display: flex;
     flex-direction: column;
     background-color: #353758;
-    align-items: center; }
+    align-items: center;
+  }
   .side_bar {
-    grid-area: side_bar; }
+    grid-area: side_bar;
+  }
   .side_bar iframe {
     width: 50%;
     border-radius: 1%;
     margin-top: 5px;
     margin-bottom: 5px;
-    border-style: inset; }
+    border-style: inset;
+  }
   .side_bar p {
     color: white;
-    font-size: 80%; }
+    font-size: 80%;
+  }
   .side_bar p::first-letter {
     font-size: 50px;
     line-height: 50px;
-    margin-left: 18px; }
+    margin-left: 18px;
+  }
   /* Crid. Fin Pagina home -------------------------------*/
   /* Crid. Pagina de YAC -------------------------------*/
   #mi_moto_yac {
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: 15px auto auto auto auto auto;
-    grid-template-areas: "h2_yac" "zonte_p1_yac" "zonte_p2_yac" "zonte_p3_yac" "zonte_p4_yac" "side_bar_yac";
-    gap: 1em; }
+    grid-template-areas: "h2_yac" "zonte_p1_yac" "zonte_p2_yac" "zonte_p3_yac" "zonte_p4_yac" "side_bar_yac";
+    gap: 1em;
+  }
   .side_bar_yac {
-    grid-area: side_bar_yac; }
+    grid-area: side_bar_yac;
+  }
   .side_bar_yac {
     display: flex;
     flex-direction: column;
     background-color: #353758;
-    align-items: center; }
-    .side_bar_yac iframe {
-      width: 50%;
-      border-radius: 2%;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      border-style: inset; }
-    .side_bar_yac p {
-      color: white;
-      font-size: 80%;
-      margin-bottom: 5px; }
-    .side_bar_yac p::first-letter {
-      font-size: 50px;
-      line-height: 50px;
-      margin-left: 18px; }
-  .zonte_p1_yac p,
-  .zonte_p2_yac p,
-  .zonte_p3_yac p,
-  .zonte_p4_yac p {
+    align-items: center;
+  }
+  .side_bar_yac iframe {
+    width: 50%;
+    border-radius: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: inset;
+  }
+  .side_bar_yac p {
     color: white;
     font-size: 80%;
-    padding: 20px 40px 10px 40px; }
+    margin-bottom: 5px;
+  }
+  .side_bar_yac p::first-letter {
+    font-size: 50px;
+    line-height: 50px;
+    margin-left: 18px;
+  }
+  .zonte_p1_yac p,
+.zonte_p2_yac p,
+.zonte_p3_yac p,
+.zonte_p4_yac p {
+    color: white;
+    font-size: 80%;
+    padding: 20px 40px 10px 40px;
+  }
   .zonte_p1_yac p::first-letter,
-  .zonte_p2_yac p::first-letter,
-  .zonte_p3_yac p::first-letter,
-  .zonte_p4_yac p::first-letter {
+.zonte_p2_yac p::first-letter,
+.zonte_p3_yac p::first-letter,
+.zonte_p4_yac p::first-letter {
     font-size: 40px;
     line-height: 50px;
     margin-top: -3px;
-    margin-right: 2px; }
+    margin-right: 2px;
+  }
   .p_yac {
-    grid-column: span 2; }
+    grid-column: span 2;
+  }
   .zonte_p1_yac iframe,
-  .zonte_p2_yac iframe,
-  .zonte_p3_yac iframe,
-  .zonte_p4_yac iframe {
+.zonte_p2_yac iframe,
+.zonte_p3_yac iframe,
+.zonte_p4_yac iframe {
     width: 80%;
     border-radius: 2%;
     margin-top: 5px;
     margin-bottom: 5px;
-    border-style: inset; }
+    border-style: inset;
+  }
   .zonte_p1_yac,
-  .zonte_p2_yac,
-  .zonte_p3_yac,
-  .zonte_p4_yac {
+.zonte_p2_yac,
+.zonte_p3_yac,
+.zonte_p4_yac {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+  }
   /*Crid. Fin pagina de YAC ---------------------*/
   /*Pagina formulario ----------------------------*/
   .form_zontes {
     flex-wrap: wrap;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .form_zontes .form_zontes_side_bar {
-    width: 100%; }
+    width: 100%;
+  }
   /*Pagina viajes ----------------------------*/
   .viaje_zontes {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%; }
+    width: 100%;
+  }
   .viaje_zontes_side_bar {
     margin-left: 10%;
     width: 100%;
-    margin-top: 2%; } }
-
+    margin-top: 2%;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 1020px) {
   .header_uno__parrafo_dos {
-    font: bold 300% "Ibarra Real Nova", serif; }
+    font: bold 300% "Ibarra Real Nova", serif;
+  }
   .header_uno__parrafo span:nth-child(2n+4) {
-    font: bold 90% "Ibarra Real Nova", serif; }
+    font: bold 90% "Ibarra Real Nova", serif;
+  }
   h3::first-letter {
     font-size: 70px;
-    line-height: 50px; }
+    line-height: 50px;
+  }
   h3 {
     padding: 20px 40px 10px 40px;
     color: white;
     font-size: 100%;
-    text-align: center; }
+    text-align: center;
+  }
   h2 {
-    font: bold 120% "Aclonica", sans-serif; }
+    font: bold 120% "Aclonica", sans-serif;
+  }
   .seccion_main1_home,
-  .seccion_main2_home,
-  .seccion_main3_home {
+.seccion_main2_home,
+.seccion_main3_home {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+  }
   /* Crid. Pagina home -------------------------------*/
   .main_home {
     display: grid;
     grid-template-columns: 28% auto;
     grid-auto-rows: 20px auto auto auto;
-    grid-template-areas: "h2_main_home  h2_main_home" "side_bar  seccion_main1_home" "side_bar  seccion_main2_home" "side_bar   seccion_main3_home";
-    gap: 1em; }
+    grid-template-areas: "h2_main_home  h2_main_home" "side_bar  seccion_main1_home" "side_bar  seccion_main2_home" "side_bar   seccion_main3_home";
+    gap: 1em;
+  }
   .h2_main_home {
-    grid-area: h2_main_home; }
+    grid-area: h2_main_home;
+  }
   .side_bar {
-    grid-area: side_bar; }
+    grid-area: side_bar;
+  }
   .seccion_main1_home {
-    grid-area: seccion_main1_home; }
+    grid-area: seccion_main1_home;
+  }
   .seccion_main2_home {
-    grid-area: seccion_main2_home; }
+    grid-area: seccion_main2_home;
+  }
   .seccion_main3_home {
-    grid-area: seccion_main3_home; }
+    grid-area: seccion_main3_home;
+  }
   .side_bar {
     display: flex;
     flex-direction: column;
     background-color: #353758;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+  }
   .side_bar iframe {
     width: 80%;
     border-radius: 1%;
     margin-top: 5px;
     margin-bottom: 5px;
-    border-style: inset; }
+    border-style: inset;
+  }
   .side_bar p {
     color: white;
-    font-size: 80%; }
+    font-size: 80%;
+  }
   .side_bar p::first-letter {
     font-size: 50px;
     line-height: 50px;
-    margin-left: 18px; }
+    margin-left: 18px;
+  }
   /* Crid. Fin Pagina home -------------------------------*/
   /* Crid. Pagina de YAC -------------------------------*/
   #mi_moto_yac {
     display: grid;
     grid-template-columns: 33% 66%;
     grid-auto-rows: 20px auto auto auto auto;
-    grid-template-areas: "h2_yac           h2_yac"         "side_bar_yac     zonte_p1_yac"    "side_bar_yac     zonte_p2_yac"    "side_bar_yac     zonte_p3_yac"    "side_bar_yac     zonte_p4_yac";
-    gap: 1em; }
+    grid-template-areas: "h2_yac           h2_yac" "side_bar_yac     zonte_p1_yac" "side_bar_yac     zonte_p2_yac" "side_bar_yac     zonte_p3_yac" "side_bar_yac     zonte_p4_yac";
+    gap: 1em;
+  }
   .h2_yac {
-    grid-area: h2_yac; }
+    grid-area: h2_yac;
+  }
   .side_bar_yac {
-    grid-area: side_bar_yac; }
+    grid-area: side_bar_yac;
+  }
   /*Crid. Fin pagina de YAC ---------------------*/
   .seccion_main1_home,
-  .seccion_main2_home,
-  .seccion_main3_home {
+.seccion_main2_home,
+.seccion_main3_home {
     display: grid;
     grid-template-columns: 48% 12% 12%;
-    grid-template-rows: auto auto; }
+    grid-template-rows: auto auto;
+  }
   /*Pagina formulario ----------------------------*/
   .form_zontes {
     flex-wrap: wrap;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .form_zontes .form_zontes_side_bar {
-    width: 100%; }
+    width: 100%;
+  }
   /*Pagina viajar ----------------------------*/
   .viaje_zontes {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+  }
   .viaje_zontes_side_bar {
     width: 100%;
-    margin-top: 2%; }
+    margin-top: 2%;
+  }
   .seccion_main1_home img,
-  .seccion_main2_home img,
-  .seccion_main3_home img {
-    align-items: flex-end; } }
-
+.seccion_main2_home img,
+.seccion_main3_home img {
+    align-items: flex-end;
+  }
+}
 @media only screen and (min-width: 1020px) {
   h3::first-letter {
     font-size: 50px;
-    line-height: 50px; }
+    line-height: 50px;
+  }
   h3 {
     padding: 20px 40px 10px 40px;
     color: white;
-    font-size: 90%; }
+    font-size: 90%;
+  }
   h2 {
-    font: bold 150% "Aclonica", sans-serif; }
+    font: bold 150% "Aclonica", sans-serif;
+  }
   h1 {
-    font: bold 600% "Ibarra Real Nova", serif; }
+    font: bold 600% "Ibarra Real Nova", serif;
+  }
   /* Crid. Pagina home -------------------------------*/
   .main_home {
     display: grid;
     grid-template-columns: 20% auto;
     grid-auto-rows: 20px auto auto auto;
-    grid-template-areas: "h2_main_home  h2_main_home " "side_bar      seccion_main1_home " "side_bar      seccion_main2_home " "side_bar      seccion_main3_home ";
-    gap: 1em; }
+    grid-template-areas: "h2_main_home  h2_main_home " "side_bar      seccion_main1_home " "side_bar      seccion_main2_home " "side_bar      seccion_main3_home ";
+    gap: 1em;
+  }
   .h2_main_home {
-    grid-area: h2_main_home; }
+    grid-area: h2_main_home;
+  }
   .side_bar {
-    grid-area: side_bar; }
+    grid-area: side_bar;
+  }
   .side_bar {
     display: flex;
     flex-direction: column;
     background-color: #353758;
-    align-items: center; }
+    align-items: center;
+  }
   .side_bar iframe {
     width: 80%;
     border-radius: 1%;
     margin-top: 5px;
     margin-bottom: 5px;
-    border-style: inset; }
+    border-style: inset;
+  }
   .side_bar p {
     color: white;
-    font-size: 80%; }
+    font-size: 80%;
+  }
   .side_bar p::first-letter {
     font-size: 50px;
     line-height: 50px;
-    margin-left: 18px; }
+    margin-left: 18px;
+  }
   /* Crid. Fin Pagina home -------------------------------*/
   /* Crid. Pagina de YAC -------------------------------*/
   #mi_moto_yac {
     grid-column-start: 2;
-    grid-column-end: 3; }
+    grid-column-end: 3;
+  }
   #mi_moto_yac {
     display: grid;
     grid-template-columns: 20% 79%;
     grid-auto-rows: 20px auto auto auto auto;
-    grid-template-areas: "h2_yac              h2_yac"         "side_bar_yac        zonte_p1_yac"    "side_bar_yac        zonte_p2_yac"    "side_bar_yac        zonte_p3_yac"    "side_bar_yac        zonte_p4_yac";
-    gap: 1em; }
+    grid-template-areas: "h2_yac              h2_yac" "side_bar_yac        zonte_p1_yac" "side_bar_yac        zonte_p2_yac" "side_bar_yac        zonte_p3_yac" "side_bar_yac        zonte_p4_yac";
+    gap: 1em;
+  }
   .h2_yac {
-    grid-area: h2_yac; }
+    grid-area: h2_yac;
+  }
   .side_bar_yac {
-    grid-area: side_bar_yac; }
+    grid-area: side_bar_yac;
+  }
   /*Crid. Fin pagina de YAC ---------------------*/
   .seccion_main1_home,
-  .seccion_main2_home,
-  .seccion_main3_home {
+.seccion_main2_home,
+.seccion_main3_home {
     display: grid;
     grid-template-columns: 60% 15% 15%;
-    grid-template-rows: 140px 140px; }
-  /*Fin estilos zonte_p1_yac -------------------------*/ }
+    grid-template-rows: 140px 140px;
+  }
+  /*Fin estilos zonte_p1_yac -------------------------*/
+}/*# sourceMappingURL=styles.css.map */

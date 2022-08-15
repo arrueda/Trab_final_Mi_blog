@@ -9,11 +9,6 @@ html{
     box-sizing: border-box;
 }
 
-.body{
-    width: 90%;
-    margin: 10px auto;
-}
-
 h2{
     font: bold 90% $fuente_h2;
     justify-content: space-around;
@@ -45,9 +40,6 @@ h1{
     padding: 2% 5% 0 5%;    
 }
 
-
-
-
 body{
     
     font-family: 'Poppins', sans-serif;
@@ -77,19 +69,38 @@ body{
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    &__parrafo{
-        font: bold calc(10% + 5vw) $fuente_ppal;
-        font-weight: bold;
-        color: $color_fuente;
-        position: absolute;
-        padding-top: 7%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-shadow: rgba(0, 0, 0, 0.8);
+
+    &__animacion-video{
+        position: relative;
+
+        &__parrafo{
+            font: bold calc(10% + 5vw) $fuente_ppal;
+            font-weight: bold;
+            color: $color_fuente;
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            transform: translate(-50%, -50%);
+            text-shadow: rgba(0, 0, 0, 0.8);
+            
+        }
+
+        &__parrafo_dos{
+            font: bold calc(-60% + 5vw) $fuente_ppal;
+            font-weight: bold;
+            color:$color_fuente;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow:4px 4px 2px black;;
+            
+        }
         
     }
     
-    & span:nth-child(2n+4){
+    
+    & span:nth-child(2n+2){
         font: bold 120% $fuente_ppal;
     
         animation-name: cambia_color;
@@ -123,21 +134,15 @@ body{
 }
 
 .video_head{
-    width: 100%;
+    width: 70%;
     border-radius: 1%;
     border-style: inset;
-}
-
-.header_uno__parrafo_dos{
-    font: bold calc(-60% + 5vw) $fuente_ppal;
-    font-weight: bold;
-    color:$color_fuente;
-    position: absolute;
-    padding-top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow:4px 4px 2px black;;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*
+    margin-left: 15%;
+    */
 }
 
 .logo{
@@ -172,37 +177,13 @@ p::first-letter{
 }
 /*Fin de letra capital*/
 
-/* Boton de scroll up*/
-#ir_arriba_boton{
-    position: fixed;
-    z-index: 10000;
-    right: 25px;
-    bottom: 25px;
-    background-color: rgb(25,121,169);
-    width: 40px;
-    height: 50px;
-    text-decoration: none;
-    color: $color_fuente;
-    text-align: center; 
-    line-height: 50px;
-    font-size: 22px;
-    border-radius: 40%;
-    transition: all 0.2s;
-}
-
-#ir_arriba_boton:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-/* Fin boton de scroll up*/
 /* Fin del header*/
 /*-------------------------------------------------------------*/
 
 /* Pagina 'home'*/
 
 .h2_main_home{
-    justify-content: center;
+    justify-items: stretch;
     align-items: center;
 }
 
@@ -227,6 +208,7 @@ p::first-letter{
 #foto_h3_3{
     grid-column: 2/4;
     justify-self: center;
+    
 }
 
 .seccion_main1_home img,
@@ -333,6 +315,8 @@ p::first-letter{
 }
 
 .dropdown{
+    display: flex;
+    justify-content: flex-end;
     position: sticky;
     top: 0;
     z-index: 1000;

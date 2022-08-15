@@ -1,19 +1,13 @@
 
 @media only screen and (max-width:600px){
-
-    .body{
-        width: 98%;
-        margin-left: 10px;
-               
-    }
-
+    
     h3::first-letter{
         font-size:50px;
         line-height:50px;
     }
 
     h3{
-        padding: 1px 1px;
+        padding: 1.2rem;
         color: $color_fuente;
         font-size: 80%;
     }
@@ -167,6 +161,15 @@
             
     }
 
+    .zonte_p1_yac,
+    .zonte_p2_yac,
+    .zonte_p3_yac,
+    .zonte_p4_yac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     /*Crid. Fin pagina de YAC ---------------------*/
     /*Pagina formulario ----------------------------*/
 
@@ -193,10 +196,6 @@
         margin-top: 2%;
     }
     
-    .dropdown{
-        margin-left: 80%;
-    
-    }
 }
 
 
@@ -236,7 +235,7 @@
     /* Crid. Pagina home -------------------------------*/ 
     .main_home{
         display: grid;
-        grid-template-columns: 30% 69%;
+        grid-template-columns: 28% auto;
         grid-auto-rows: 20px auto auto auto;
         grid-template-areas: "h2_main_home  h2_main_home"
                               "side_bar  seccion_main1_home"
@@ -247,6 +246,7 @@
     
     .h2_main_home{
         grid-area: h2_main_home;
+       
     }
     
     .side_bar{
@@ -322,8 +322,8 @@
     .seccion_main2_home,
     .seccion_main3_home{
         display: grid;
-        grid-template-columns: 70% 15% 15%;
-        grid-template-rows: 140px 140px;                
+        grid-template-columns: 48% 12% 12%;
+        grid-template-rows: auto auto;                
     }
   
     /*Pagina formulario ----------------------------*/
@@ -350,17 +350,12 @@
         margin-top: 2%;
         
     }
-
-    .dropdown{
-        margin-left: 90%;
     
-    }
-
-    .dropdown{
-        margin-left: 90%;
-    
-    }
-
+    .seccion_main1_home img,
+    .seccion_main2_home img,
+    .seccion_main3_home img{
+        align-items: flex-end;
+}
 }
 
 @media only screen and (min-width:1020px){
@@ -387,19 +382,20 @@
     /* Crid. Pagina home -------------------------------*/ 
     .main_home{
         display: grid;
-        grid-template-columns: 20% 79%;
+        grid-template-columns: 20% auto;
         grid-auto-rows: 20px auto auto auto;
-        grid-template-areas: "h2_main_home  h2_main_home"
-                             "side_bar      seccion_main1_home"
-                             "side_bar      seccion_main2_home"
-                             "side_bar      seccion_main3_home";
+        grid-template-areas: "h2_main_home  h2_main_home "
+                             "side_bar      seccion_main1_home "
+                             "side_bar      seccion_main2_home "
+                             "side_bar      seccion_main3_home ";
         gap: 1em;
     }
     
     .h2_main_home{
         grid-area: h2_main_home;
     }
-    
+
+       
     .side_bar{
         grid-area: side_bar;
     }
@@ -465,15 +461,10 @@
     .seccion_main2_home,
     .seccion_main3_home{
         display: grid;
-        grid-template-columns: 70% 15% 15%;
+        grid-template-columns: 60% 15% 15%;
         grid-template-rows: 140px 140px;                
     }
-    
-    .dropdown{
-        margin-left: 92.5%;
-    
-    }
-            
+          
     /*Fin estilos zonte_p1_yac -------------------------*/
     
 }   
